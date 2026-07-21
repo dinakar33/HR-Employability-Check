@@ -60,11 +60,12 @@ with tab1:
 # --- TAB 2: REGISTRATION & ATS ---
 with tab2:
     st.header("Step 1: Official Registration & Resume Upload")
-    st.write("Please fill out this official form to submit your PDF resume to our secure database.")
+    st.write("Click the button below to open the official registration form and submit your PDF resume to our secure database.")
     
-    # 🔴 PASTE YOUR GOOGLE FORM IFRAME LINK HERE 🔴
-    google_form_iframe = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-YOUR-FORM-LINK-HERE/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
-    components.html(google_form_iframe, height=600)
+    # 🔴 PASTE YOUR SHORTENED GOOGLE FORM LINK HERE 🔴
+    google_form_url = "https://forms.gle/Pxinc1Ac1HsC1vsq8"
+    
+    st.link_button("🔗 Open Official Registration & Resume Form", google_form_url, use_container_width=True)
     
     st.markdown("---")
     
